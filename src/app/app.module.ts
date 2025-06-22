@@ -7,6 +7,8 @@ import { GiveComponent } from './give/give.component';
 import { ClearComponent } from './clear/clear.component';
 import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { API_BASE_URL, QueueServiceProxy, ServiceProxy } from '../shared/service-proxies';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,16 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterOutlet, 
-    RouterLink, 
+    RouterOutlet,
+    RouterLink,
     RouterLinkActive
   ],
-  providers: [],
+  providers: [
+    { provide: API_BASE_URL, useValue: 'https://localhost:44352' },
+    provideHttpClient(),
+    ServiceProxy,
+    QueueServiceProxy
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

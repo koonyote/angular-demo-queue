@@ -1,12 +1,12 @@
 <div class="flex flex-col items-center space-y-4 mt-10">
-  <button type="button" class="bg-blue-700 hover:bg-blue-700 text-white text-3xl font-medium py-5 w-[50%] rounded-lg">
+  <button type="button" class="bg-blue-700 hover:bg-blue-700 text-white text-3xl font-medium py-5 w-[50%] rounded-lg" onclick="onClearBT()">
     ล้างคิว
   </button>
   <div class="font-medium text-3xl">
     หมายเลขคิวปัจจุบัน
   </div>
   <div class="font-bold text-9xl">
-    A5
+    {{currentNo}}
   </div>
   <button type="button" class="bg-blue-700 hover:bg-blue-700 text-white text-3xl font-medium py-5 w-[50%] rounded-lg" routerLink="/">
     กลับไปหน้ารับบัตรคิว
