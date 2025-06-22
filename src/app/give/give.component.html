@@ -2,11 +2,12 @@
   <div class="font-medium text-3xl">
     หมายเลขคิว
   </div>
-  <div class="font-bold text-9xl">
-    A5
+  <div class="font-bold text-9xl" *ngIf="date">
+    {{number}}
   </div>
-  <div>
-    วันที่ : 15/10/2021 เวลา 14:00 น.
+  <div *ngIf="date">
+    <!-- วันที่ : 15/10/2021 เวลา 14:00 น. -->
+     วันที่ : {{date}} เวลา {{time}} น.
   </div>
   <button type="button" class="bg-blue-700 hover:bg-blue-700 text-white text-3xl font-medium py-5 w-[50%] rounded-lg" routerLink="/">
     กลับไปหน้ารับบัตรคิว

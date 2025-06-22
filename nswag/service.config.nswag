@@ -3,7 +3,7 @@
   "defaultVariables": null,
   "documentGenerator": {
     "fromDocument": {
-      "url": "https://us-central1-stock-management-1ea3f.cloudfunctions.net/api/docs-json",
+      "url": "https://localhost:44352/swagger/v1/swagger.json",
       "output": null,
       "newLineBehavior": "Auto"
     }
@@ -47,7 +47,7 @@
       "useLeafType": false,
       "classTypes": [],
       "extendedClasses": [],
-      "extensionCode": "service.extensions.ts",
+      "extensionCode": "",
       "generateDefaultValues": true,
       "excludedTypeNames": [],
       "excludedParameterNames": [],

@@ -3,7 +3,7 @@
     รับบัตรคิว
   </button>
 
-  <button type="button" class="bg-blue-700 hover:bg-blue-700 text-white text-3xl font-medium py-5 w-[50%] rounded-lg" routerLink="/clear">
+  <button type="button" class="bg-blue-700 hover:bg-blue-700 text-white text-3xl font-medium py-5 w-[50%] rounded-lg disabled:bg-gray-400" routerLink="/clear" [disabled]="clearDisable">
     ล้างคิว
   </button>
 </div>

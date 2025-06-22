@@ -27,6 +27,7 @@ export class ClearComponent implements OnInit {
   }
 
   onClearBT() {
+    this.currentNo = "00";
     this.serviceProxy.delete().subscribe(result => {
       this.featchData();
     })
